@@ -118,9 +118,6 @@
 							<div class="col-xs-6">
 								<a href="#" class="active" id="login-form-link">Circle</a>
 							</div>
-							<div class="col-xs-6">
-								<a href="#" id="register-form-link">Triangle</a>
-							</div>
 						</div>
 						<hr>
 					</div>
@@ -142,6 +139,32 @@
 										</div>
 									</div>
 
+								</form>
+								<div class="panel-heading">
+						<div class="row">
+							<div class="col-xs-6">
+								<a class="active" id="login-form-link"><B>TRIANGLE<B></a>
+							</div>
+						<hr>
+					</div>
+								<form  action="<?php echo base_url(); ?>index.php/welcome" method="post" role="form">
+									<div class="form-group">
+										<input type="text" name="base" id="Base" tabindex="1" class="form-control" placeholder="Base" value="">
+									</div>
+									<div class="form-group">
+										<input type="text" name="height" id="Height" tabindex="1" class="form-control" placeholder="Height Address" value="">
+									</div>
+									
+									<?php if(!empty($result1)){ ?>
+									<h2><?php echo $result1; ?></h2>
+									<?php } ?>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="submit1" id="Height-submit" tabindex="4" class="form-control btn btn-register" value="Calculate">
+											</div>
+										</div>
+									</div>
 								</form>
 							</div>
 						</div>
